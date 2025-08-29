@@ -10,6 +10,7 @@ public class Tarea_casa_29_08_25 {
 
     public static void main(String[] args) {
         int op;
+        do {
         Scanner lectura=new Scanner(System.in);
         System.out.println("++++++++++++++++++Menu inicial++++++++++++++++++++++");
         System.out.println("1. Calculadora");
@@ -47,6 +48,7 @@ public class Tarea_casa_29_08_25 {
                 System.out.println("La opcion no existe");
             }
         }
+        }while(op != 5);
     }
     public static void calculadora(){
         double num1, num2, res ;
@@ -94,6 +96,7 @@ public class Tarea_casa_29_08_25 {
            System.out.println("¿Quiere seguir utilizando la calculadora?");
            resp=lectura.next().toUpperCase();
         }while(resp.equals("SI"));
+      
         }
     
     public static void mesesaño(){
@@ -209,7 +212,7 @@ public class Tarea_casa_29_08_25 {
             a=num1*num2;
             System.out.println("El perimetro es: "+p);
             System.out.println("El area es: "+a); 
-        }else if(op.equalsIgnoreCase("Triagulo")){
+        }else if(op.equalsIgnoreCase("Triangulo")){
             System.out.println("Triagulo");
             System.out.println("Calculos a realizar area");
             System.out.println("Ingrese altura: ");
